@@ -1,9 +1,9 @@
 import React from "react";
 import { Nav, NavLink, NavMenu }
-    from "./navbar";
- 
-const Navbar = () => {
-    return (
+from "./navbar_style";
+
+function Navbar() {
+    return(
         <>
             <Nav>
                 <NavMenu>
@@ -13,7 +13,7 @@ const Navbar = () => {
                 </NavMenu>
             </Nav>
         </>
-    );
-};
- 
-export default Navbar;
+    )
+}
+
+export default Navbar
