@@ -5,44 +5,42 @@ import { Row, Col, Container, Image } from "react-bootstrap";
 const CV = () => {
     return (
 
-        <div>
+        <body>
             <Container fluid className="p-3 ">
                 <Row>
-                    <Col className="text-center justify-content-center align-items-center d-flex flex-column    " xs="12" md="4">
-                        <div>
+                    <Col className="text-center justify-content-center"
+                        xs="12"
+                        md="4"
+                        style={{ wordWrap: 'break-word' }}
+                    >
+                        <div >
                             <Image
                                 rounded
                                 src={profilepic}
                                 className="img-fluid"
-                                style={{ maxWidth: '50%', minWidth: '100px'}}
-                                
-                                
+                                style={{ maxWidth: '50%', minWidth: '250px' }}
+
+
 
                             />
-                            <h2> <b>Georg Vassilev</b></h2>
-                            <div id="TextContainer">
-                                <p >
+                            <h2 style={{ marginTop: '20px' }}> <b>Georg Vassilev</b></h2>
 
-                                    
-                                    
-                                        Kajenkuja 8 23D 00500 Helsinki <br />
-                                        040 825 3839  <br />
-                                        selftitled1@gmail.com <br />
-                                   
+                            <p >
+                                Kajenkuja 8 23D 00500 Helsinki <br />
+                                040 825 3839  <br />
+                                selftitled1@gmail.com <br />
 
+                            </p>
 
-
-                                </p>
-                            </div>
                         </div>
 
-                        <div className="">
-                        <p>
-                                    <h5><b>Links:</b></h5>
-                                    <a href="https://github.com/Georg1992" ><b>GitHub</b></a> <br />
-                                    <a href="https://www.codewars.com/users/Georg1992"><b>Codewars</b></a> <br />
-                                    Ask for more if needed!
-                                </p>
+                        <div className="text-left">
+                            <p>
+                                <h5><b>Links:</b></h5>
+                                <a href="https://github.com/Georg1992" ><b>GitHub</b></a> <br />
+                                <a href="https://www.codewars.com/users/Georg1992"><b>Codewars</b></a> <br />
+                                <i>Ask for more if needed!</i>
+                            </p>
                         </div>
 
                     </Col>
@@ -53,7 +51,7 @@ const CV = () => {
 
                                 I am an Information Technology specialist with a background in audio and video production, focusing on multimedia and software engineering.
                                 My professional competencies lie in mobile programming, sound processing, and game design. With a creative yet analytical mindset, I excel at staying focused and solving problems
-                                under any circumstances. Wide knowledge of technology stack, attention to the details as well as my passion to create and to learn new things make me a great candidate for any modern company.
+                                under any circumstances. Wide knowledge of the technology stack, attention to the details, as well as my passion to create and to learn new things, make me a great candidate for any modern company.
 
 
                             </p>
@@ -104,6 +102,11 @@ const CV = () => {
                                 Position: Game Developer/Sound Engineer <br />
                             </p>
 
+                            <p>
+                                <i>09.2014-01.2016 (Civil Service)</i> <br />
+                                Company: Lyhty Ry <br />
+                                Position: Stage Assistant, Audio Engineer <br />
+                            </p>
 
                             <p>
                                 <i>2010-present</i> <br />
@@ -134,13 +137,23 @@ const CV = () => {
                         </div>
                     </Col>
                 </Row>
+                
+
             </Container>
 
-        </div>
+        </body>
     );
 
 };
 export default CV;
+
+
+
+
+
+
+
+
 
 
 

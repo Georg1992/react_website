@@ -1,21 +1,38 @@
 import React from "react";
-import {Navbar, Nav} from "react-bootstrap";
+import giflogo from '../images/gif_logo.gif'
+import { Navbar, Nav, Image } from "react-bootstrap";
 import { LinkContainer } from 'react-router-bootstrap'
+import '../styles.css'
 
 function Navigation() {
-    return (
-        <Navbar bg="light" expand="lg" className="p-3"> 
-        <Navbar.Brand style={{ color: 'pink' }}>666</Navbar.Brand>
-            <Nav>
-                <LinkContainer to="/home">
-                    <Nav.Link className="lead">HOME</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to="/cv">
-                    <Nav.Link className="lead">CV</Nav.Link>
-                </LinkContainer>
 
-            </Nav>
-        </Navbar>   
+
+
+    return (
+        <header>
+            <div className="nav-container">
+                <Navbar bg="light" expand="lg" className="p-1" >
+                    <Navbar.Brand>
+                        <Image
+                            src={giflogo}
+                            style={{ maxHeight: '60px', width: 'auto' }}>
+                        </Image>
+                    </Navbar.Brand>
+
+                    <Nav className={`nav justify-content-center text-center`}>
+                        <LinkContainer to="/">
+                            <Nav.Link>Home</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to="/cv">
+                            <Nav.Link>CV</Nav.Link>
+                        </LinkContainer>
+
+                    </Nav>
+                </Navbar>
+            </div>
+            <div className="divider"/>
+        </header>
+        
     )
 }
 
