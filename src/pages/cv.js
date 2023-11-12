@@ -1,5 +1,5 @@
 import React from "react";
-import profilepic from '../images/profilepic.jpg'
+import profilepic from '../images/profilepic.png'
 import { Row, Col, Container, Image } from "react-bootstrap";
 
 const CV = () => {
